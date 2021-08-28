@@ -89,7 +89,7 @@ function App() {
     let ids = []
     let pos = {}
 
-    for(let i = 0; i < 10000; i++) {
+    for(let i = 0; i < 10; i++) {
       const id = i.toString()
       ids.push(id)
 
@@ -99,7 +99,7 @@ function App() {
         l.push({"source": id, "target": ids[Math.floor((Math.random() * i) + 1)], "value": 1})
       }
 
-      pos[id] = {"x":Math.floor((Math.random() * 100000) + 1),"y":Math.floor((Math.random() * 100000) + 1)}
+      pos[id] = {"x":Math.floor((Math.random() * 1000) + 1),"y":Math.floor((Math.random() * 1000) + 1)}
     }
 
     const { nodes, links } = {
